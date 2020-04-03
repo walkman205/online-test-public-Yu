@@ -1,24 +1,16 @@
-This is the guide for hosting collaborative online testing on your own computer.
+This is the simple guide for hosting collaborative online testing on your own computer.
 
 Requirements: 
-1. You must have "Node.js" on your computer. if you are using Windows, downloading "Node.js" will also give you the "Node.js commend prompt.
-2. You must have your own document-oriented database. We suggest to use MongoDB, and you will need the connection string of your database.
-		If you are MongoDB, you can find your connection URL by:
-			1. Sign in your MongoDB account.
-			2. Creating your Clusters.
-			2. Clicking "connect" under the name of your Cluster (this button is in the mid left followed by metrics and collections), then select "Connect your application".
-			3. Setting "DRIVER"="Node.js", "VERSION"="2.0.14 or later".
-			4. Copy the connection string and change the "<password>" to your account password.
-
-You need to update the `dbUrl` variable to your database connection in **index.js**.
-
-Note: You don't need add your own data or load a sample database, the project will initialize an account for you.
-The default teachers' account is "123", password "admin".
+You must have "Node.js" on your computer. if you are using Windows, downloading "Node.js" will also give you the "Node.js commend prompt.
 
 Running:
-1. Go to the directory of this project in cmd.
-2. If this is the first running, type `npm install`.
-3. Type `node index.js` to localhost, the default link will be `localhost:8888`.
+1.download Git
+2.Go to the directory in cmd
+3.If this is first running, type `npm install`
+4.Type `node index.js`
+5.Go to a web browse and type `localhost:8888`
+6.For collaborative example, you will need two different browses
+7.The teacher’s account is “123” with password “admin”. The students’ accounts are “2000” with password “2000” and “3000” with password “3000”. You can create more accounts using teacher’s account. However, only students’ account can do the problem set, and the data will be recorded.
 
 
 To create questions:
